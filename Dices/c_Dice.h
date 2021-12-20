@@ -7,18 +7,18 @@ private:
 public:
 
 	c_Dice() {
-		value = rand()%6;
+		this->value = rand()%6;
 	}
 
-	void setValue(short value) {
+	void setValue(int value) {
 		this->value = value;
 	}
-	short getValue() {
+	int getValue() {
 		return value;
 	}
 
-	friend std::ostream& operator<<(std::ostream& out, c_Dice dice) {
-		out << "\nИмя: " << dice.getValue();
+	friend std::ostream& operator<<(std::ostream& out,const c_Dice& dice) {
+		out << "\nValue: " << dice.value << "\n";
 		return out;
 	}
 

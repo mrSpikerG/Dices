@@ -1,27 +1,28 @@
 ﻿#include <iostream>
+#include <time.h>
 #include "c_SetOfDice.h"
+using namespace std;
 int main()
 {
 	srand(time(0));
-
+	setlocale(LC_ALL, "");
 	//class Dice
 	c_Dice* dice = new c_Dice();
 
 	//operator <<
-	std::cout << dice;
+	cout <<"1 Dice " << *dice;
 
 	//class set of Dice
 	int size;
-	std::cout << "\nВведите кол-во кубиков: ";
-	std::cin >> size;
+	cout << "\nВведите кол-во кубиков: ";
+	cin >> size;
 	c_SetOfDice* DiceSet = new c_SetOfDice(size);
 
 	// operator << []
-	std::cout<<DiceSet<<"\n\n";
-	//std::cout << DiceSet[0]<<"\n";
+	cout<<*DiceSet<<"\n\n";
 	
 	//Sum of set
-	std::cout << DiceSet->sumDices();
+	cout << "\nОбщая сумма: "<<DiceSet->sumDices();
 
 }
 

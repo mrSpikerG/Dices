@@ -22,7 +22,7 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& out, const c_SetOfDice set) {
 		for (int i = 0; i < set.size; i++) {
-			out << "\nDice(" << i + 1 << "): ";// << set.setOfDice[i].getValue();
+			out << "\nDice(" << i + 1 << "): " << set.setOfDice[i].getValue();
 		}
 		return out;
 	}
