@@ -7,7 +7,7 @@ private:
 public:
 
 	c_Dice() {
-		this->value = rand()%6;
+		this->value = 1+rand()%6;
 	}
 
 	void setValue(int value) {

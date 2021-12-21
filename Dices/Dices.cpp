@@ -22,7 +22,7 @@ int main()
 	cout<<*DiceSet<<"\n\n";
 	
 	//Sum of set
-	cout << "\nОбщая сумма: "<<DiceSet->sumDices();
+	cout << "\nSum: "<<DiceSet->sumDices();
 
 }
 
