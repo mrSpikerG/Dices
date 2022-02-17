@@ -17,6 +17,7 @@ public:
 		return value;
 	}
 
+
 	friend std::ostream& operator<<(std::ostream& out,const c_Dice& dice) {
 		out << "\nValue: " << dice.value << "\n";
 		return out;
